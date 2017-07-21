@@ -1,0 +1,26 @@
+.main-news {
+  margin-left: 82px;
+  margin-top: 2px;
+  &__list {
+    list-style-type: none;
+    counter-reset: li;
+    &._uncount{
+      li:before {
+        counter-increment: li;
+        content: " ";
+        padding-right: 18px;
+      }
+    }
+    li:before {
+      counter-increment: li;
+      content: counters(li, ".") ". ";
+      padding-right: 2px;
+    }
+  }
+  &__number-item {
+    margin: 10px 0px;
+  }
+  &__rates {
+    padding: inherit;
+  }
+}

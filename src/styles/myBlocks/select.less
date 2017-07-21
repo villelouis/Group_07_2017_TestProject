@@ -1,0 +1,45 @@
+@color: red;
+.select {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+
+  &__caption {
+    cursor: pointer;
+    text-align: center;
+    &:hover{
+      cursor: pointer;
+      color: @color;
+    }
+  }
+
+  &__body {
+    box-shadow: 0px 8px 22px rgba(122, 122, 122, 0.7);
+    display: none;
+    z-index: 2;
+    top: 22px;
+    list-style-type: none;
+    border-color: rgb(231, 231, 231);
+    border-width: 1.5px;
+    border-style: solid;
+    padding: 0px;
+    margin: 4px 0px;
+  }
+
+  &__item {
+    right: 18px;
+    padding: 6px 12px;
+    text-align: center;
+    &:hover{
+      background: #ffdb9d;
+    }
+  }
+
+  &._lenguage {
+    width: 60px;
+  }
+
+  & __body {
+    z-index: 5;
+  }
+}

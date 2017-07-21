@@ -1,0 +1,90 @@
+//div class="search__nav"></div>
+//<input type="#text" class="search__input">
+//<div class="search__button"></div>
+//<div class="search__line"></div>
+.search {
+  position: relative;
+
+  @input-panel-position-x:164px;
+  @input-panel-position-y:50px;
+  @input-panel-height:34px;
+
+  &__nav{
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
+    top:20px;
+    left: @input-panel-position-x;
+    height: 20px;
+    width: 570px;
+    box-sizing: border-box;
+    //background: blueviolet;
+
+  }
+
+
+  &__input{
+    position: absolute;
+    top:@input-panel-position-y;
+    left: @input-panel-position-x;
+    height: @input-panel-height;
+    width: 594px;
+    box-sizing: border-box;
+    //background: honeydew;
+    border: 1.5px solid #fe5;
+    padding: 8px 12px;
+
+  }
+
+
+  &__button{
+    position: absolute;
+    padding: 8px 18px;
+    top:50px;
+    left: 758px;
+    height: @input-panel-height;
+    width: 80px;
+    box-sizing: border-box;
+    background: #fe5;
+    &:hover{
+      cursor:pointer;
+    }
+  }
+
+
+  &__line{
+    position: absolute;
+    top:90px;
+    left: (@input-panel-position-x)-2px;
+    height: 16px;
+    width: 594px;
+    //background: honeydew;
+  }
+
+
+  @line-text-size:14px;
+
+  &__text{
+    font-size: 81%;
+  }
+
+
+  &__link{
+    font-size: 81%;
+    color:silver;
+    &:hover{
+      color:red;
+    }
+  }
+
+
+  &__logo{
+  position: absolute;
+    top:12px;
+    left: 12px;
+    background: url(//yastatic.net/www/_/_/i/tLI86LIriNsIJwhEqZS2o1Ckk.webp) no-repeat;
+    width: 140px;
+    height: 100px;
+  }
+
+}
